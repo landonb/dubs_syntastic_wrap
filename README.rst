@@ -9,10 +9,32 @@ A simple wrapper around the fantastic
 plugin, which checks your code for syntax and style errors
 when you open and save source files, or on demand.
 
-Project page: https://github.com/landonb/dubs_syntastic_wrap
+Install Plugin
+--------------
 
-Prerequisites
--------------
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_syntastic_wrap.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_syntastic_wrap.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-syntastic-wrap
+
+Install Checkers
+----------------
 
 You'll need to install syntax checkers to use this tool.
 
