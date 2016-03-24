@@ -1,11 +1,11 @@
 " File: dubs_syntastic_wrap.vim
 " Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
-" Last Modified: 2015.01.27
+" Last Modified: 2016.02.10
 " Project Page: https://github.com/landonb/dubs_syntastic_wrap
 " Summary: Syntastic wrapper
 " License: GPLv3
 " -------------------------------------------------------------------
-" Copyright © 2015 Landon Bouma.
+" Copyright © 2015-2016 Landon Bouma.
 " 
 " This file is part of Dubsacks.
 " 
@@ -130,6 +130,18 @@ let g:syntastic_python_checkers = ['python']
 let g:syntastic_javascript_checkers = ['jshint']
 " It's not necessary to set the path like this:
 "  let g:syntastic_javascript_jshint_exec = "/usr/local/bin/jshint"
+"
+" From exo's chart_d3.js:
+"  // Silence a few jshint warnings. See:
+"  //  /usr/local/lib/node_modules/jshint/src/messages.js
+"  //  ... Bad line breaking before '+'. (W014)
+"  //  ... is defined but never used. (W098)
+"  // The jshint checker is quirky: The -W098 flag does nothing:
+"  // jshint -W098
+"  // What you really want is to unset the global:
+"  // jshint unused:false
+"  // Silencing -W014 works fine:
+"  // jshint -W014
 
 " MAYBE: reStructuredText: rst2pseudoxml, rstcheck
 " MAYBE: css checker: csslint, phpcs, prettycss, recess
