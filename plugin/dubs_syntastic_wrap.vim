@@ -169,6 +169,10 @@ nnoremap <C-E> :SyntasticToggle(0)<CR>
 inoremap <C-E> <C-O>:SyntasticToggle(0)<CR>
 "cnoremap <C-E> <C-C>:SyntasticToggle(0)<CR>
 "onoremap <C-E> <C-C>:SyntasticToggle(0)<CR>
+" NOTE: <C-e> is scroll window downward (which Dubs maps to Ctrl-down).
+" If this remapping becomes an issue, you could use, say, <C-l>, which
+" is digraph in insert mode, but we could just remap in normal mode. E.g.,
+"   nnoremap <C-l> :SyntasticToggle(0)<CR>
 
 command -bang -nargs=* SyntasticToggle
   \ :call <SID>SyntasticToggle(<bang>0)
