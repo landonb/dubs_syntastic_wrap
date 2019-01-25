@@ -1,5 +1,5 @@
-Dubsacks Vim — Syntastic Wrapper
-================================
+Dubs Vim — Syntastic Wrapper
+============================
 
 About This Plugin
 -----------------
@@ -108,7 +108,7 @@ Ctrl-e again to close the location list.
 
 * Also, if you use the quickfix window, closing it can
   cause the height of the Syntastic location list to grow.
-  The Dubsacks plugin, ``dubs_quickfix_wrap``, makes sure to
+  The Dubs Vim plugin, ``dubs_quickfix_wrap``, makes sure to
   resize the location list window when the quickfix window is
   closed, otherwise the height of the location list increases
   relative to the height of the quickfix window that was closed.

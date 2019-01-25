@@ -7,20 +7,20 @@
 " -------------------------------------------------------------------
 " Copyright © 2015-2016 Landon Bouma.
 " 
-" This file is part of Dubsacks.
+" This file is part of Dubs Vim.
 " 
-" Dubsacks is free software: you can redistribute it and/or
+" Dubs Vim is free software: you can redistribute it and/or
 " modify it under the terms of the GNU General Public License
 " as published by the Free Software Foundation, either version
 " 3 of the License, or (at your option) any later version.
 " 
-" Dubsacks is distributed in the hope that it will be useful,
+" Dubs Vim is distributed in the hope that it will be useful,
 " but WITHOUT ANY WARRANTY; without even the implied warranty
 " of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
 " the GNU General Public License for more details.
 " 
 " You should have received a copy of the GNU General Public License
-" along with Dubsacks. If not, see <http://www.gnu.org/licenses/>
+" along with Dubs Vim. If not, see <http://www.gnu.org/licenses/>
 " or write Free Software Foundation, Inc., 51 Franklin Street,
 "                     Fifth Floor, Boston, MA 02110-1301, USA.
 " ===================================================================
@@ -100,11 +100,14 @@ let g:syntastic_python_python_exec = "/usr/bin/python3"
 " *** Syntax Checkers.
 "
 " For complete list, see:
+"
 "   https://github.com/scrooloose/syntastic/wiki/Syntax-Checkers
-" What's configured here is for dubsacks, i.e., based on [lb]'s
-" preferences and experience with different projects (e.g., not
-" all projects will lint cleanly).
+"
+" What's configured herein is for the Dubs Vim author, i.e., based
+" on [lb]'s preferences and experience with different projects (e.g.,
+" not all projects will lint cleanly).
 " You may want to tweak this for yourself.
+"
 " MAYBE: Move the config from here to the style_guard and let it
 "        change with each project. Ya know, a virtualenv for Vim.
 
@@ -157,7 +160,7 @@ let g:syntastic_javascript_checkers = ['jshint']
 
 " To navigate errors, try :help :lnext and :help :lprev.
 
-" Dubsacks Syntastic Mappings
+" Dubs Vim Syntastic Mappings
 " ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 " In Vim, you can map Ctrl-Shift-to special keys and numbers,
