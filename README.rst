@@ -1,8 +1,11 @@
-Dubs Vim — Syntastic Wrapper
-============================
+####################################
+Dubs Vim |em_dash| Syntastic Wrapper
+####################################
+
+.. |em_dash| unicode:: 0x2014 .. em dash
 
 About This Plugin
------------------
+=================
 
 A simple wrapper around the fantastic
 `Syntastic <https://github.com/scrooloose/syntastic>`__
@@ -10,7 +13,7 @@ plugin, which checks your code for syntax and style errors
 when you open and save source files, or on demand.
 
 Install Plugin
---------------
+==============
 
 Standard Pathogen installation:
 
@@ -34,7 +37,7 @@ Online help:
    :help dubs-syntastic-wrap
 
 Install Checkers
-----------------
+================
 
 You'll need to install syntax checkers to use this tool.
 
@@ -43,7 +46,7 @@ choose, so the following is not a recommendation of any
 specific tools, it's just an example.
 
 Example Checker Installation: Pylint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------
 
 Installing the Python linter,
 `Pylint <http://www.pylint.org/>`__,
@@ -54,7 +57,7 @@ is simple.
    sudo apt-get install -y pylint
 
 Example Checker Installation: Jshint
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------
 
 Installing the JavaScript syntax checker,
 `jshint <http://jshint.com/>`__, which runs atop
@@ -97,7 +100,7 @@ Finally, use ``npm`` to install ``jshint``.
    npm install -g jshint
 
 Painfully Easy Usage
---------------------
+====================
 
 In a Vim window, type ``<Ctrl-e>`` to run Syntastic on the buffer
 and open the location list if their are errors, and type
@@ -114,7 +117,7 @@ Ctrl-e again to close the location list.
   relative to the height of the quickfix window that was closed.
 
 Other Configuration
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 The plugin also configures Syntastic to the author's liking:
 
@@ -177,7 +180,7 @@ based on the project in which a file resides.)
    let g:syntastic_javascript_checkers = ['jshint']
 
 Features Bound to Key Commands
-------------------------------
+==============================
 
 ==================================  ==================================  ==============================================================================
 Key Mapping                         Description                         Notes
