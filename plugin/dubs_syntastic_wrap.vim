@@ -30,9 +30,9 @@
 
 " A simple wrapper around Syntastic.
 "
-" In a window, type Ctrl-e to run Syntastic on the buffer
+" In a window, type Ctrl-e/<C-e> to run Syntastic on the buffer
 " and open the location list if their are errors, and type
-" Ctrl-e again to close the location list.
+" Ctrl-e/<C-e> again to close the location list.
 
 if exists("g:plugin_dubs_syntastic_wrap") || &cp
   finish
@@ -75,8 +75,8 @@ let g:syntastic_check_on_wq = 1
 "autocmd FileType javascript let b:syntastic_mode = "active"
 "
 " If you don't like files being automatically linted when opened or
-" saved, it's easy to use Ctrl-e to run the checker and then again
-" to hide its output, so we indicate all filetypes as passive.
+" saved, it's easy to use Ctrl-e/<C-e> to run the checker and then
+" again to hide its output, so we indicate all filetypes as passive.
 let g:syntastic_mode_map = {
       \ "mode": "passive",
       \ "active_filetypes": [],
