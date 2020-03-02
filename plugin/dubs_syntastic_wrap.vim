@@ -168,14 +168,24 @@ let g:syntastic_javascript_checkers = ['jshint']
 " show/hide to two separate Ctrl-<letter> commands, or we
 " could just use a toggler and map it to one.
 
-nnoremap <C-E> :SyntasticToggle(0)<CR>
-inoremap <C-E> <C-O>:SyntasticToggle(0)<CR>
-"cnoremap <C-E> <C-C>:SyntasticToggle(0)<CR>
-"onoremap <C-E> <C-C>:SyntasticToggle(0)<CR>
-" NOTE: <C-e> is scroll window downward (which Dubs maps to Ctrl-down).
-" If this remapping becomes an issue, you could use, say, <C-l>, which
-" is digraph in insert mode, but we could just remap in normal mode. E.g.,
-"   nnoremap <C-l> :SyntasticToggle(0)<CR>
+" Heh?/2020-03-01 16:26: Should use a leader key, I never use this!
+if 0
+  nnoremap <C-e> :SyntasticToggle(0)<CR>
+  inoremap <C-e> <C-O>:SyntasticToggle(0)<CR>
+  "cnoremap <C-e> <C-C>:SyntasticToggle(0)<CR>
+  "onoremap <C-e> <C-C>:SyntasticToggle(0)<CR>
+  " NOTE: <C-e> is scroll window downward (which Dubs maps to Ctrl-down).
+  " If this remapping becomes an issue, you could use, say, <C-l>, which
+  " is digraph in insert mode, but we could just remap in normal mode. E.g.,
+  "   nnoremap <C-l> :SyntasticToggle(0)<CR>
+else
+  " 2020-03-01 16:29: <Leader>l seems like it'd make pnemonic sense, 'L'inting, right?
+  " - But using capital <Leader>L, because lowercase l used by cool mapping I had forgotten,
+  "   and now might find useful because recent work with Hugo, which uses markdown, and the
+  "   Dubs Vim <Leader>l converts raw HTML links on a line to Markdown links, such useful.
+  nnoremap <silent> <leader>L :SyntasticToggle(0)<CR>
+  inoremap <silent> <leader>L <C-O>:SyntasticToggle(0)<CR>
+endif
 
 command -bang -nargs=* SyntasticToggle
   \ :call <SID>SyntasticToggle(<bang>0)
