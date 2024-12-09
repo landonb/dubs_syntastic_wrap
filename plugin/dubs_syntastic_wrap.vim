@@ -179,7 +179,7 @@ if 0
   " is digraph in insert mode, but we could just remap in normal mode. E.g.,
   "   nnoremap <C-l> :SyntasticToggle(0)<CR>
 else
-  " 2020-03-01 16:29: <Leader>l seems like it'd make pnemonic sense, 'L'inting, right?
+  " 2020-03-01 16:29: <Leader>l seems like it'd make mnemonic sense, 'L'inting, right?
   " - But using capital <Leader>L, because lowercase l used by cool mapping I had forgotten,
   "   and now might find useful because recent work with Hugo, which uses markdown, and the
   "   Dubs Vim <Leader>l converts raw HTML links on a line to Markdown links, such useful.
