@@ -6,13 +6,16 @@
 "
 " -------------------------------------------------------------------
 
-" About:
-
-" A simple wrapper around Syntastic.
+" ABOUT:
 "
-" In a window, type Ctrl-e/<C-e> to run Syntastic on the buffer
-" and open the location list if their are errors, and type
-" Ctrl-e/<C-e> again to close the location list.
+" A simple wrapper around Syntastic:
+" https://github.com/scrooloose/syntastic
+"
+" In a window, type <Ctrl-E> to run Syntastic on the buffer
+" and open the location list if their are errors; then type
+" <Ctrl-E> again to close the location list.
+
+" -------------------------------------------------------------------
 
 if exists("g:plugin_dubs_syntastic_wrap") || &cp
   finish
