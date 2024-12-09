@@ -17,10 +17,20 @@
 
 " -------------------------------------------------------------------
 
-if exists("g:plugin_dubs_syntastic_wrap") || &cp
+" USAGE: After editing this plugin, you can reload it on the fly with
+"        https://github.com/landonb/vim-source-reloader#↩️
+" - Uncomment this `unlet` (or disable the `finish`) and hit <F9>.
+"
+" silent! unlet g:loaded_dubs_syntastic_wrap_plugin
+
+if exists("g:loaded_dubs_syntastic_wrap_plugin") || &cp
+
   finish
 endif
-let g:plugin_dubs_syntastic_wrap = 1
+
+let g:loaded_dubs_syntastic_wrap_plugin = 1
+
+" -------------------------------------------------------------------
 
 " ------------------------------------------------------
 " On-the-fly Syntax Checking with Syntastic
