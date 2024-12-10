@@ -4,6 +4,57 @@ Dubs Vim |em_dash| Syntastic Wrapper
 
 .. |em_dash| unicode:: 0x2014 .. em dash
 
+Deprecation Notice
+==================
+
+This plugin is deprecated, as the author has since migrated to using
+`LSP <https://langserver.org/>`__ tools.
+
+`Syntastic is likewise deprecated
+<https://github.com/vim-syntastic/syntastic#1-deprecation-note>`__,
+and it notes, *If you need a syntax checking plugin for Vim you might be interested in
+Syntastic's spiritual succesor,* |ALE|_.
+
+.. |coc.nvim| replace:: ``coc.nvim``
+.. _coc.nvim: https://github.com/neoclide/coc.nvim
+
+.. |ALE| replace:: *ALE*
+.. _ALE: https://github.com/dense-analysis/ale
+
+You might also be want to check out |coc.nvim|_.
+
+- See this note about `running CoC and ALE together
+  <https://github.com/dense-analysis/ale#cocnvim>`__,
+  but you might just be happy with CoC without ALE.
+
+.. |nvim-lspconfig| replace:: ``nvim-lspconfig``
+.. _nvim-lspconfig: https://github.com/neovim/nvim-lspconfig
+
+.. |nvim-cmp| replace:: ``nvim-cmp``
+.. _nvim-cmp: https://github.com/hrsh7th/nvim-cmp
+
+.. |coq_nvim| replace:: ``coq_nvim``
+.. _coq_nvim: https://github.com/ms-jpq/coq_nvim
+
+.. |trouble.nvim| replace:: ``trouble.nvim``
+.. _trouble.nvim: https://github.com/folke/trouble.nvim
+
+`Neovim <https://neovim.io/>`__ also has built-in LSP support, but you'll
+likely need to configure it (check out |nvim-lspconfig|_), and you might
+want to enable completion (e.g., with |nvim-cmp|_ or |coq_nvim|_),
+also to add diagnostics (see |trouble.nvim|_).
+
+.. |vim-lsc| replace:: ``vim-lsc``
+.. _vim-lsc: https://github.com/natebosch/vim-lsc
+
+.. |YouCompleteMe| replace:: YouCompleteMe
+.. _YouCompleteMe: https://github.com/ycm-core/YouCompleteMe
+
+Alternatives to CoC include |vim-lsc|_ and |YouCompleteMe|_.
+
+(Although I've been happy with `CoC <https://github.com/neoclide/coc.nvim>`__
+and cannot attest to any of the other tools I've listed above!)
+
 About This Plugin
 =================
 
