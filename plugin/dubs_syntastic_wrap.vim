@@ -166,8 +166,6 @@ let g:syntastic_javascript_checkers = ['jshint']
 if 0
   nnoremap <C-e> :SyntasticToggle(0)<CR>
   inoremap <C-e> <C-O>:SyntasticToggle(0)<CR>
-  "cnoremap <C-e> <C-C>:SyntasticToggle(0)<CR>
-  "onoremap <C-e> <C-C>:SyntasticToggle(0)<CR>
   " NOTE: <C-e> is scroll window downward (which Dubs maps to Ctrl-down).
   " If this remapping becomes an issue, you could use, say, <C-l>, which
   " is digraph in insert mode, but we could just remap in normal mode. E.g.,
