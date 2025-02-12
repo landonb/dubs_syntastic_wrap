@@ -1,6 +1,6 @@
 *dubs_syntastic_wrap.txt*	For Vim version 7.4.	Last change: 2015 Jan 23
 
-Dubs Vim -- Syntastic Wrap
+Dubs Vim -- Syntastic Wrap ~
 
 SYNTASTIC WRAP				*dubs-syntastic-wrap*
 
